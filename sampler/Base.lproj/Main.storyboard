@@ -17,46 +17,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Zn-c1-9ZV">
-                                <rect key="frame" x="91" y="361" width="209" height="30"/>
-                                <state key="normal" title="ABANDON SHIP (stop sample)">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7XQ-MG-EId">
+                                <rect key="frame" x="52" y="116" width="214" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="tintColor" red="1" green="0.0013305250376343114" blue="0.54256794592114499" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="India Street Sounds">
+                                    <color key="titleShadowColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="audioButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5Ni-Vg-CtV"/>
+                                    <action selector="buttonTap:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="MfD-3F-mCn"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxo-Hj-evy">
-                                <rect key="frame" x="129" y="312" width="135" height="30"/>
-                                <state key="normal" title="India Street Sounds"/>
-                                <connections>
-                                    <action selector="sendScoreTest:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="oGG-94-FZN"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IvZ-oY-ehb">
-                                <rect key="frame" x="118" y="269" width="153" height="30"/>
-                                <state key="normal" title="London Street Sounds"/>
-                                <connections>
-                                    <action selector="generateDataNote2:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Pa3-dx-7Ha"/>
-                                </connections>
-                            </button>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ffx-26-S0y">
-                                <rect key="frame" x="170" y="217" width="51" height="31"/>
-                                <connections>
-                                    <action selector="audioOn:" destination="vXZ-lx-hvc" eventType="valueChanged" id="aRa-Kh-e4R"/>
-                                </connections>
-                            </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Audio On/Off" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSj-Cn-vjl">
-                                <rect key="frame" x="144" y="169" width="101" height="40"/>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="5Jz-4W-q8M">
+                                <rect key="frame" x="100" y="183" width="118" height="31"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uon-dX-p7b">
+                                <rect key="frame" x="114" y="229" width="91" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="sample pitch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qdD-aB-Vmq">
+                                <rect key="frame" x="110" y="154" width="98" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KBx-xI-399">
+                                <rect key="frame" x="93" y="78" width="153" height="30"/>
+                                <state key="normal" title="London Street Sounds"/>
+                                <connections>
+                                    <action selector="londonButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ykk-t4-CSq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="audioOnSwitch" destination="ffx-26-S0y" id="6V9-Yb-u0q"/>
+                        <outlet property="londonToggle" destination="KBx-xI-399" id="KmS-Nu-n1Y"/>
+                        <outlet property="toggleButton" destination="7XQ-MG-EId" id="Wcv-T5-MH7"/>
+                        <outlet property="uiLabel" destination="uon-dX-p7b" id="a8r-2Z-LHk"/>
+                        <outlet property="uiSlider" destination="5Jz-4W-q8M" id="VOL-dp-1ra"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

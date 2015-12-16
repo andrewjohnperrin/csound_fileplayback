@@ -1,19 +1,24 @@
 <CsoundSynthesizer>
 <CsInstruments>
-instr 1
-aout diskin2 "London.wav", 1, 0, 1, 0, 32
+instr 2
+ksl chnget "slider"
+aout diskin2 "London.wav", ksl, 0, 1, 0, 32
 out aout
 endin
 
-instr 2
-aout2 diskin2 "india.wav", 1, 0, 1, 0, 32
+instr 1
+ksl chnget "slider"
+aout2 diskin2 "india.wav", ksl, 0, 1, 0, 32
 out aout2
 endin
+
+instr 99
+turnoff2 p4, 2, 0
+endin
+
+
 </CsInstruments>
 <CsScore>
-
-
-
 
 </CsScore>
 </CsoundSynthesizer>
