@@ -34,6 +34,7 @@
 		3FDB67B01C18CB2C006F99FE /* diskin.csd in Resources */ = {isa = PBXBuildFile; fileRef = 3FDB67AF1C18CB2C006F99FE /* diskin.csd */; };
 		3FDB67B21C18CD76006F99FE /* London.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3FDB67B11C18CD76006F99FE /* London.wav */; };
 		3FDB67B41C18D754006F99FE /* india.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3FDB67B31C18D754006F99FE /* india.wav */; };
+		A7FADAB4202D032C00260FDD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A7FADAB3202D032C00260FDD /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +123,7 @@
 		3FDB67AF1C18CB2C006F99FE /* diskin.csd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = diskin.csd; sourceTree = "<group>"; };
 		3FDB67B11C18CD76006F99FE /* London.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = London.wav; sourceTree = "<group>"; };
 		3FDB67B31C18D754006F99FE /* india.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = india.wav; sourceTree = "<group>"; };
+		A7FADAB3202D032C00260FDD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 				3FDB673F1C18C871006F99FE /* Main.storyboard */,
 				3FDB67421C18C871006F99FE /* Images.xcassets */,
 				3FDB67441C18C871006F99FE /* LaunchScreen.xib */,
+				A7FADAB3202D032C00260FDD /* README.md */,
 				3FDB67351C18C871006F99FE /* Supporting Files */,
 			);
 			path = sampler;
@@ -417,6 +420,7 @@
 				3FDB67B01C18CB2C006F99FE /* diskin.csd in Resources */,
 				3FDB67461C18C871006F99FE /* LaunchScreen.xib in Resources */,
 				3FDB67B21C18CD76006F99FE /* London.wav in Resources */,
+				A7FADAB4202D032C00260FDD /* README.md in Resources */,
 				3FDB67431C18C871006F99FE /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
